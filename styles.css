@@ -5,20 +5,25 @@
 }
 
 :root {
-    --red: #FF0000;
+    --red: #e11d48;
     --white: #FFFFFF;
-    --maple-red: #D52B1E;
-    --ice-blue: #E8F4F8;
-    --dark-blue: #003366;
-    --light-gray: #F5F5F5;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --maple-red: #e11d48;
+    --ice-blue: #e8eef6;
+    --dark-blue: #0f172a;
+    --light-gray: #f3f4f6;
+    --shadow: rgba(2, 6, 23, 0.12);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --card-border: rgba(255, 255, 255, 0.35);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--ice-blue) 0%, #ffffff 100%);
     min-height: 100vh;
     padding: 20px;
+    color: #0b1220;
+    background: radial-gradient(1200px 800px at -10% -10%, #c7d2fe 0%, transparent 60%),
+                radial-gradient(1000px 700px at 110% 0%, #fecaca 0%, transparent 60%),
+                linear-gradient(180deg, #f8fbff 0%, #eef2ff 60%, #ffffff 100%);
 }
 
 .container {
@@ -93,9 +98,11 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px var(--shadow);
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px var(--shadow);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--card-border);
 }
 
 header h1 {
@@ -118,10 +125,12 @@ header h1 {
 }
 
 .setup-card {
-    background: white;
+    background: var(--card-bg);
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px var(--shadow);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px var(--shadow);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(8px);
     text-align: center;
     max-width: 500px;
     width: 100%;
@@ -164,10 +173,12 @@ header h1 {
 
 
 .controls {
-    background: white;
+    background: var(--card-bg);
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px var(--shadow);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px var(--shadow);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(8px);
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -299,12 +310,12 @@ select:focus {
 }
 
 .flashcard-front {
-    background: linear-gradient(135deg, var(--maple-red) 0%, #ff4444 100%);
+    background: linear-gradient(165deg, #ef4444 0%, #f97316 100%);
     color: white;
 }
 
 .flashcard-back {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, #0055aa 100%);
+    background: linear-gradient(165deg, #1f2937 0%, #0ea5e9 100%);
     color: white;
     transform: rotateY(180deg);
 }
@@ -365,10 +376,12 @@ select:focus {
 
 
 .quiz-container {
-    background: white;
+    background: var(--card-bg);
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px var(--shadow);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px var(--shadow);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(8px);
 }
 
 .quiz-header {
