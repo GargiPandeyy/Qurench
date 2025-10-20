@@ -10,7 +10,7 @@ It’s made with plain HTML, CSS, and JavaScript. The content lives in local JSO
 
 Along the way, I learned that sticking to static JSON keeps things simple, and that believable distractors make a big difference in how good a quiz feels. I also found that small, intentional animations and feedback loops are worth the effort because they add personality. Keeping the stack framework‑free made the project easy to maintain.
 
-To try it locally, clone or download the repository and open index.html in a modern browser.
+To try it locally, clone or download the repository and open index.html in a modern browser. Here is the link if you want to try it online: https://gargipandeyy.github.io/Qurench/
 
 If I continue this, I’d like to add favorites and custom decks so you can build a personal set to study, a timed “Blizzard Blitz” mode for quick challenges, some lightweight badges like toques or scarves for milestones, and maybe province‑themed powers or a small map overlay to give regional flavor.
 
