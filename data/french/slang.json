@@ -1,0 +1,33 @@
+[
+  {
+    "term": "C'est le fun",
+    "meaning": "It's fun (Québec expression)",
+    "example": "Ce festival, c'est le fun!",
+    "funFact": "Anglicism embraced in Québec French everyday speech."
+  },
+  {
+    "term": "Magasiner",
+    "meaning": "To go shopping",
+    "example": "On va magasiner au centre d'achats.",
+    "funFact": "From 'magasin' (store); common in Québec French."
+  },
+  {
+    "term": "Char",
+    "meaning": "Car (Québec French)",
+    "example": "Le char est stationné derrière.",
+    "funFact": "Standard French uses 'voiture'; 'char' is regional."
+  },
+  {
+    "term": "Poutine",
+    "meaning": "Fry-cheese curd-gravy dish; also used jokingly in phrases",
+    "example": "T'as mangé de la poutine encore?",
+    "funFact": "Culinary symbol of Québec culture."
+  },
+  {
+    "term": "Salut, bonjour!",
+    "meaning": "Friendly greeting meaning hi/hello",
+    "example": "Salut, bonjour! Ça va?",
+    "funFact": "Also the name of a popular Québec morning TV show."
+  }
+]
+

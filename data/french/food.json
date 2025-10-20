@@ -1,0 +1,33 @@
+[
+  {
+    "term": "Poutine",
+    "meaning": "Frites, fromage en grains et sauce brune",
+    "example": "On prend une poutine après le match?",
+    "funFact": "Née au Québec; devenue emblématique à travers le pays."
+  },
+  {
+    "term": "Tourtière",
+    "meaning": "Tarte salée à la viande",
+    "example": "La tourtière de ma grand-mère est incroyable.",
+    "funFact": "Plat traditionnel du temps des Fêtes au Québec."
+  },
+  {
+    "term": "Tire d'érable",
+    "meaning": "Sirop d'érable refroidi sur la neige, roulé sur un bâton",
+    "example": "On a mangé de la tire d'érable à la cabane à sucre.",
+    "funFact": "Rituel printanier des cabanes à sucre."
+  },
+  {
+    "term": "Bagel de Montréal",
+    "meaning": "Bagel sucré-croustillant cuit au four à bois",
+    "example": "J'ai acheté des bagels de Montréal sur Fairmount.",
+    "funFact": "Différent du bagel de New York, plus petit et plus sucré."
+  },
+  {
+    "term": "Smoked meat",
+    "meaning": "Viande fumée à la montréalais, servie en sandwich",
+    "example": "On va chez Schwartz's pour du smoked meat.",
+    "funFact": "Institution culinaire montréalaise."
+  }
+]
+

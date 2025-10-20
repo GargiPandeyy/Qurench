@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍁 Canadian Language Learning Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍁 Learn Canadian Eh!</h1>
+            <p class="tagline">Master Canadian English & Québécois French</p>
+        </header>
+
+        <div id="animeLayer" class="anime-layer" aria-hidden="true"></div>
+
+        
+        <div id="apiKeySetup" class="api-key-setup" style="display: none;">
+        </div>
+
+        
+        <div id="mainApp" class="main-app" style="display: none;">
+            
+            <div id="companion" class="companion" aria-live="polite">
+                <div class="companion-avatar" id="companionAvatar">🦫</div>
+                <div class="companion-bubble" id="companionBubble">Hi! I’m your study buddy.</div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label>Language:</label>
+                    <div class="toggle-group">
+                        <button onclick="setLanguage('english')" id="englishBtn" class="btn btn-toggle active">
+                            Canadian English
+                        </button>
+                        <button onclick="setLanguage('french')" id="frenchBtn" class="btn btn-toggle">
+                            Québécois French
+                        </button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>Category:</label>
+                    <select id="categorySelect" onchange="loadNewFlashcards()">
+                        <option value="slang">Slang & Expressions</option>
+                        <option value="food">Food & Drinks</option>
+                        <option value="weather">Weather Talk</option>
+                        <option value="everyday">Everyday Phrases</option>
+                        <option value="culture">Culture & Traditions</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>Mode:</label>
+                    <div class="toggle-group">
+                        <button onclick="setMode('flashcard')" id="flashcardBtn" class="btn btn-toggle active">
+                            Flashcards
+                        </button>
+                        <button onclick="setMode('quiz')" id="quizBtn" class="btn btn-toggle">
+                            Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="flashcardMode" class="flashcard-mode">
+                <div class="loading" id="loadingFlashcard" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Generating Canadian content...</p>
+                </div>
+
+                <div id="flashcardContainer" class="flashcard-container">
+                    <div class="flashcard" id="flashcard" onclick="flipCard()">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <div class="card-content">
+                                    <h2 id="cardTerm">Click "Load Cards" to start!</h2>
+                                    <p class="card-hint">Click card to flip</p>
+                                </div>
+                            </div>
+                            <div class="flashcard-back">
+                                <div class="card-content">
+                                    <h3>Meaning</h3>
+                                    <p id="cardMeaning">...</p>
+                                    <h3>Example</h3>
+                                    <p id="cardExample" class="example">...</p>
+                                    <p id="cardFact" class="fun-fact">...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard-nav">
+                    <button onclick="previousCard()" class="btn btn-nav">← Previous</button>
+                    <span id="cardCounter" class="card-counter">0 / 0</span>
+                    <button onclick="nextCard()" class="btn btn-nav">Next →</button>
+                </div>
+
+                <div class="action-buttons">
+                    <button onclick="loadNewFlashcards()" class="btn btn-primary">Load New Cards</button>
+                </div>
+            </div>
+
+            
+            <div id="quizMode" class="quiz-mode" style="display: none;">
+                <div class="loading" id="loadingQuiz" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Generating quiz questions...</p>
+                </div>
+
+                <div id="quizContainer" class="quiz-container">
+                    <div class="quiz-header">
+                        <h2>Quiz Time!</h2>
+                        <p class="score">Score: <span id="quizScore">0</span> / <span id="quizTotal">0</span></p>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p class="question-text" id="questionText">Click "Start Quiz" to begin!</p>
+                        <div class="quiz-options" id="quizOptions">
+                        </div>
+                    </div>
+
+                    <div id="quizFeedback" class="quiz-feedback" style="display: none;"></div>
+
+                    <div class="quiz-nav">
+                        <button onclick="loadNewQuiz()" class="btn btn-primary">Start New Quiz</button>
+                        <button onclick="nextQuestion()" id="nextQuestionBtn" class="btn btn-nav" style="display: none;">
+                            Next Question →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-btn">
+                <button onclick="toggleMute()" id="muteBtn" class="btn btn-secondary">🔊 Sound On</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+[
+  {
+    "term": "Tempête de neige",
+    "meaning": "Chute de neige intense avec vent",
+    "example": "On annonce une tempête de neige ce soir.",
+    "funFact": "Peut paralyser des villes entières l'hiver."
+  },
+  {
+    "term": "Verglas",
+    "meaning": "Pluie qui gèle au contact et crée une couche de glace",
+    "example": "Attention au verglas sur les trottoirs.",
+    "funFact": "Responsible de pannes majeures, comme en 1998 au Québec."
+  },
+  {
+    "term": "Frette",
+    "meaning": "Très froid (familier)",
+    "example": "Ferme la porte, il fait frette!",
+    "funFact": "Québécisme courant pour parler du froid."
+  },
+  {
+    "term": "Chinook",
+    "meaning": "Vent chaud et sec qui réchauffe rapidement",
+    "example": "Le chinook a fait fondre la neige en une journée.",
+    "funFact": "Terme partagé avec l'Ouest canadien anglophone."
+  },
+  {
+    "term": "Refroidissement éolien",
+    "meaning": "Sensation de froid amplifiée par le vent",
+    "example": "Avec le refroidissement éolien, on ressent -25°C.",
+    "funFact": "Exprimé souvent dans les bulletins météo canadiens."
+  }
+]
+
