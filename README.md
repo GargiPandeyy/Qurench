@@ -1,6 +1,6 @@
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
-🍁 Learn Canadian Eh! is a tiny web app that teaches Canadian English slang and Québécois French using simple flashcards and quick multiple‑choice quizzes. It runs entirely in the browser.
+🍁 Qurench! is a tiny web app that teaches Canadian English slang and Québécois French using simple flashcards and quick multiple‑choice quizzes. It runs entirely in the browser.
 
 The app presents short, curated cards with a term, a plain‑English meaning, an example sentence, and a small fun fact. You can switch between Canadian English and Québécois French and explore categories like slang, food, weather, everyday phrases, and culture. From the same dataset, the app generates a quiz that asks what each term means and tracks your score while offering brief explanations. There is also a tiny beaver “companion” that reacts to your answers and celebrates streaks to keep things playful.
 
