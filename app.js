@@ -106,9 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </div>
-        <div class="settings-btn" style="text-align: center; margin-top: 20px;">
-             <button id="muteBtn" class="btn btn-secondary">🔊 Sound On</button>
-        </div>
     `;
 
     let currentLanguage = 'english';
@@ -179,8 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('startQuizBtn').onclick = loadNewQuiz;
         document.getElementById('blitzBtn').onclick = startBlizzardBlitz;
         document.getElementById('nextQuestionBtn').onclick = nextQuestion;
-
-        document.getElementById('muteBtn').onclick = () => {};
     }
 
     function spawnFlyingElement() {
